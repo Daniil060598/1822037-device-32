@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Каталог</title>
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
@@ -11,7 +12,10 @@
     <h1 class="visually-hidden">Интернет-магазин «Девайс»</h1>
     <div class="menu-user">
       <img class="logo" src="img/header/logo.svg" width="145" height="36" alt="Логотип Интернет-магазин «Девайс»">
-      <a class="search" href="#">Поиск по сайту</a>
+      <form class="search-form">
+        <input type="search" id="mySearch" name="q" placeholder="Поиск по сайту">
+        <button class="button-search">Search</button>
+      </form>
       <ul class="menu-user__list">
         <li class="menu-user__item">
           <a class="menu-user__link" href="#">Войти</a>
@@ -141,23 +145,25 @@
           </ul>
         </fieldset>
 
-        <button class="button-filter" type="submit">Показать</button>
+        <button class="button-link button-filter" type="submit">Показать</button>
       </form>
-      <h3 class="sorting-type__title">Сортировка:</h3>
-      <form class="sorting-type">
-        <select class="select-control" id="sorting" name="sorting">
-          <option value="popular">Сначала популярное</option>
-          <option value="cheap">Сначала дешёвое</option>
-          <option value="expensive">Сначала дорогое</option>
-        </select>
-        <button class="visually-hidden" type="submit">Отсортировать продукты</button>
-        <button class="button-sort sort-up" type="submit">
-          <span class="visually-hidden">С начала</span>
-        </button>
-        <button class="button-sort sort-down" type="submit">
-          <span class="visually-hidden">С конца</span>
-        </button>
-      </form>
+      <div class="sorting-container">
+        <h3 class="sorting-type__title">Сортировка:</h3>
+        <form class="sorting-type">
+          <select class="select-control" id="sorting" name="sorting">
+            <option value="popular">Сначала популярное</option>
+            <option value="cheap">Сначала дешёвое</option>
+            <option value="expensive">Сначала дорогое</option>
+          </select>
+          <button class="visually-hidden" type="submit">Отсортировать продукты</button>
+          <button class="button-sort sort-up" type="submit">
+            <span class="visually-hidden">С начала</span>
+          </button>
+          <button class="button-sort sort-down" type="submit">
+            <span class="visually-hidden">С конца</span>
+          </button>
+        </form>
+      </div>
 
       <ul class="product-list">
         <li class="product-card">
@@ -189,40 +195,41 @@
           </a>
         </li>
       </ul>
-
+      
+      <button class="pagination__show-more" type="button">Загрузить еще</button>
       <ul class="pagination">
         <li class="pagination__item">
           <a class="pagination__link pagination-prev pagination-disabled" href="#">
-            Вперед
-          </a>
-        </li>
-        <li class="pagination__item">
-          <a class="pagination__link pagination-current">1</a>
-        </li>
-        <li class="pagination__item">
-          <a class="pagination__link" href="#">2</a>
-        </li>
-        <li class="pagination__item">
-          <a class="pagination__link" href="#">3</a>
-        </li>
-        <li class="pagination__item">
-          <a class="pagination__link" href="#">...</a>
-        </li>
-        <li class="pagination__item">
-          <a class="pagination__link" href="#">15</a>
-        </li>
-        <li class="pagination__item">
-          <a class="pagination__link pagination-next" href="#">
             Назад
           </a>
         </li>
+        <li class="pagination__item">
+          <a class="pagination__link-number pagination-current">1</a>
+        </li>
+        <li class="pagination__item">
+          <a class="pagination__link-number" href="#">2</a>
+        </li>
+        <li class="pagination__item">
+          <a class="pagination__link-number" href="#">3</a>
+        </li>
+        <li class="pagination__item">
+          <a class="pagination__link-number" href="#">...</a>
+        </li>
+        <li class="pagination__item">
+          <a class="pagination__link-number" href="#">15</a>
+        </li>
+        <li class="pagination__item">
+          <a class="pagination__link pagination-next" href="#">
+            Вперед
+          </a>
+        </li>
       </ul>
-      <button class="button pagination__show-more" type="button">Показать ещё</button>
     </section>
   </main>
-  <footer class="page-footer">
-    <section class="page-footer__logo">
-      <img class="footer-logo" src="img/footer/footer-logo.svg" width="145" height="36" alt="Логотип Интернет-магазин Девайс">
+  <footer class="main-footer">
+    <section class="main-footer__logo">
+      <img class="footer-logo" src="img/footer/footer-logo.svg" width="145" height="36"
+        alt="Логотип Интернет-магазин Девайс">
     </section>
     <section class="footer-nav">
       <h2 class="visually-hidden">Адрес</h2>
@@ -266,7 +273,8 @@
           </a>
         </li>
       </ul>
-      <img class="footer-social__logo" src="img/footer/footer-logo-2.svg" width="115" height="33" alt="Логотип htmlacademy">
+      <img class="footer-social__logo" src="img/footer/footer-logo-2.svg" width="115" height="33"
+        alt="Логотип htmlacademy">
     </section>
   </footer>
 </body>

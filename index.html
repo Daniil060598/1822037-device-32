@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Девайс</title>
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
@@ -11,7 +12,11 @@
     <h1 class="visually-hidden">Интернет-магазин «Девайс»</h1>
     <div class="menu-user">
       <img class="logo" src="img/header/logo.svg" width="145" height="36" alt="Логотип Интернет-магазин «Девайс»">
-      <a class="search" href="#">Поиск по сайту</a>
+      <form class="search-form">
+        <input type="search" id="mySearch" name="q"
+          placeholder="Поиск по сайту">
+        <button class="button-search">Search</button>
+      </form>
       <ul class="menu-user__list">
         <li class="menu-user__item">
           <a class="menu-user__link" href="#">Войти</a>
@@ -66,15 +71,15 @@
             <p class="text slider-inner__text">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером,
               замаскированным под стандартную камеру.
             </p>
-            <a class="button-link slider-inner__more">Подробнее</a>
+            <a class="button-link slider-inner__more" href="#">Подробнее</a>
             <table class="slider-inner__specifications">
               <tr>
-                <td>800 м</td>
-                <td>50 м</td>
+                <th>800 м</th>
+                <th>50 м</th>
               </tr>
               <tr>
-                <th>Дальность полета</th>
-                <th>Радиус поражения</th>
+                <td>Дальность полета</td>
+                <td>Радиус поражения</td>
               </tr>
             </table>
           </li>
@@ -82,13 +87,13 @@
             <h2 class="title slider-inner__heading">Худеем правильно!</h2>
             <p class="text slider-inner__text">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать
               занятия и соблюдать диету.</p>
-            <a class="button-link slider-inner__more">Подробнее</a>
+            <a class="button-link slider-inner__more" href="#">Подробнее</a>
             <table class="slider-inner__specifications">
               <tr>
-                <td>48 часов</td>
+                <th>48 часов</th>
               </tr>
               <tr>
-                <th>Без подзарядки</th>
+                <td>Без подзарядки</td>
               </tr>
             </table>
           </li>
@@ -96,17 +101,17 @@
             <h2 class="title slider-inner__heading">Делай селфи, как Бен Стиллер!</h2>
             <p class="text slider-inner__text">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь,
               Карл!) метров длиной и весом всего 5 кг.</p>
-            <a class="button-link slider-inner__more">Подробнее</a>
+            <a class="button-link slider-inner__more" href="#">Подробнее</a>
             <table class="slider-inner__specifications">
               <tr>
-                <td>8,5 м</td>
-                <td>5 кг</td>
-                <td>Карбон</td>
+                <th>8,5 м</th>
+                <th>5 кг</th>
+                <th>Карбон</th>
               </tr>
               <tr>
-                <th>Длина палки</th>
-                <th>Вес палки</th>
-                <th>Материал</th>
+                <td>Длина палки</td>
+                <td>Вес палки</td>
+                <td>Материал</td>
               </tr>
             </table>
           </li>
