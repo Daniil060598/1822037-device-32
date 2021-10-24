@@ -30,7 +30,14 @@
     font-display: swap;
 }
 
+html{
+    height: 100%;
+}
+
 body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
     color: #000000;
     background-color: #FFFFFF;
     font-family: "Rubik", sans-serif;
@@ -70,6 +77,27 @@ body {
 .page-header{
     color: #000000;
     background-color: #FFE17F;
+    width: 1160px;
+    margin: 40px auto 0;
+}
+
+.menu-user{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    margin: 0 auto;
+    width: 1041px;
+}
+
+.search-form{
+    width: 516px;
+}
+
+.menu-user__list{
+    width: 501px;
+    margin: 0px;
+    padding: 0px;
 }
 
 .menu-user__link{
@@ -78,6 +106,24 @@ body {
     line-height: 19px;
     color: inherit;
     text-decoration: none;
+}
+
+.navigation{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 1041px;
+}
+
+.catalog{
+    width: 313px;
+}
+
+.navigation__list{
+    width: 501px;
+    margin: 0px;
+    padding: 0px;
 }
 
 .navigation__link{
@@ -90,6 +136,24 @@ body {
     text-transform: uppercase;
 }
 
+.main-container{
+    flex-grow: 1;
+}
+
+.slider{
+    display: flex;
+    justify-content: space-between;
+    width: 1160px;
+    margin: 0 auto;
+}
+
+.slider-images{
+    width: 560px;
+}
+
+.slider-inner{
+    width: 560px;
+}
 
 .slider-inner__specifications th{
     font-style: normal;
@@ -101,6 +165,22 @@ body {
 .slider-inner__specifications td{
     color: #444444;
     font-size: 16px;
+}
+
+.product-categories{
+    width: 1160px;
+    margin: 0 auto;
+}
+
+.product-categories__list{
+    display: flex;
+    justify-content: space-between;
+    margin: 0px;
+    padding: 0px;
+}
+
+.product-categories__item{
+    width: 160px;
 }
 
 .product-categories__link{
@@ -116,8 +196,29 @@ body {
     background-color: #F0F0F0;
 }
 
+.services-container{
+    display: flex;
+    width: 1160px;
+    margin: 0 auto;
+}
+
+.services__list{
+    width: 280px;
+    margin: 0 116px 0 0;
+    padding: 0px;
+}
+
+.services-inner{
+    width: 696px;
+    margin: 0px;
+    padding: 0px;
+}
+
+
 .deleviry{
     background-color: #F0F0F0;
+    width: 1160px;
+    margin: 0 auto;
 }
 
 .deleviry__link{
@@ -133,13 +234,25 @@ body {
     text-decoration: none;
 }
 
-.about-company__list{
+.about-container{
+    display: flex;
+    justify-content: space-between;
+    width: 1160px;
+    margin: 0 auto;
+}
+
+.about-company{
+    width: 560px;
+}
+
+.about-company__list{  
     font-style: normal;
     font-weight: 700;
 }
 
 .contacts{   
     color: #444444;
+    width: 560px;
 }
 
 .contacts__subtitle{
@@ -157,8 +270,29 @@ body {
     font-style: normal;
 }
 
-.newsletter{
+.newsletter-container{
     background-color: #F0F0F0;
+}
+
+.newsletter{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 1160px;
+    margin: 0 auto;
+}
+
+.newsletter__title{
+    width: 560px;
+}
+
+.newsletter__text{
+    width: 560px;
+}
+
+.newsletter-form{
+    width: 861px;
 }
 
 .newsletter-form__button{
@@ -171,14 +305,36 @@ body {
     text-transform: uppercase;
 }
 
+.footer-container{
+    width: 1160px;
+    margin: 0 auto;
+}
+
+.main-footer__logo{
+    margin-right: auto;
+}
+
 .main-footer{
     background-color: #444444;
     color: #FFFFFF;
 }
 
+.footer-nav{
+    display: flex;
+}
+
+.footer-address{
+    width: 238px;
+    margin-right: 114px;
+}
+
 .footer-address__text{
     font-size: 16px;
     line-height: 19px;
+}
+
+.footer-nav__list{
+    width: 458px;
 }
 
 .footer-nav__link{
@@ -198,6 +354,17 @@ body {
     color: #FFFFFF;
     font-size: 16px;
     text-decoration: none;
+    margin-left: auto;
+}
+
+.footer-social{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-social__list{
+    width: 150px;
 }
 
 .breadcrumbs {
