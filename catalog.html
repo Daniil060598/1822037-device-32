@@ -66,7 +66,9 @@
     </div>
     <div class="container-bg">
       <div class="sorting-container">
-        <h2 class="filter-title">Фильтр:</h2>
+        <div class="filter-title-bg">
+          <h2 class="filter-title">Фильтр:</h2>
+        </div>
         <div class="sorting-inner">
           <h3 class="sorting-title">Сортировка:</h3>
           <form class="sorting-type">
@@ -76,13 +78,13 @@
               <option value="expensive">Сначала дорогое</option>
             </select>
             <button class="visually-hidden" type="submit">Отсортировать продукты</button>
-            <button class="button-sort sort-up" type="submit">
-              <span class="visually-hidden">С начала</span>
-            </button>
-            <button class="button-sort sort-down" type="submit">
-              <span class="visually-hidden">С конца</span>
-            </button>
           </form>
+          <button class="button-sort sort-up" type="submit">
+            <span class="visually-hidden">С начала</span>
+          </button>
+          <button class="button-sort sort-down" type="submit">
+            <span class="visually-hidden">С конца</span>
+          </button>
         </div>
       </div>
     </div>
@@ -204,34 +206,36 @@
             </li>
           </ul>
 
-          <button class="pagination__show-more" type="button">Загрузить еще</button>
-          <ul class="pagination">
-            <li class="pagination__item">
-              <a class="pagination__link pagination-prev pagination-disabled" href="#">
-                Назад
-              </a>
-            </li>
-            <li class="pagination__item">
-              <a class="pagination__link-number pagination-current">1</a>
-            </li>
-            <li class="pagination__item">
-              <a class="pagination__link-number" href="#">2</a>
-            </li>
-            <li class="pagination__item">
-              <a class="pagination__link-number" href="#">3</a>
-            </li>
-            <li class="pagination__item">
-              <a class="pagination__link-number" href="#">...</a>
-            </li>
-            <li class="pagination__item">
-              <a class="pagination__link-number" href="#">15</a>
-            </li>
-            <li class="pagination__item">
-              <a class="pagination__link pagination-next" href="#">
-                Вперед
-              </a>
-            </li>
-          </ul>
+          <button class="pagination-show-more" type="button">Загрузить еще</button>
+          <div class="pagination-container">
+            <ul class="pagination">
+              <li class="pagination__item">
+                <a class="pagination__link pagination-prev pagination-disabled" href="#">
+                  Назад
+                </a>
+              </li>
+              <li class="pagination__item">
+                <a class="pagination__link-number pagination-current">1</a>
+              </li>
+              <li class="pagination__item">
+                <a class="pagination__link-number" href="#">2</a>
+              </li>
+              <li class="pagination__item">
+                <a class="pagination__link-number" href="#">3</a>
+              </li>
+              <li class="pagination__item">
+                <a class="pagination__link-number" href="#">...</a>
+              </li>
+              <li class="pagination__item">
+                <a class="pagination__link-number" href="#">15</a>
+              </li>
+              <li class="pagination__item">
+                <a class="pagination__link pagination-next" href="#">
+                  Вперед
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
     </div>
