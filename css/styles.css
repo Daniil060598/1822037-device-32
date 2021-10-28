@@ -73,8 +73,9 @@ body {
 }
 
 .button-link{
+    padding: 14px 20px;
     color: #000000;
-    background: #FFE17F;
+    border: none;
     font-family: "Raleway", sans-serif;
     font-style: normal;
     font-weight: 800;
@@ -584,10 +585,19 @@ body {
 }
 
 .product-list {
+    display: grid;
+    grid-template-columns: repeat(2, 360px);
     list-style-type: none;
     margin: 69px 0 51px;
     padding: 0;
+    gap: 44px 40px;
   }
+
+.product-card__desc{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
 
 .product-card__link{
     text-decoration: none;
@@ -600,6 +610,7 @@ body {
     line-height: 24px;
     letter-spacing: -0.02em;
     margin: 23px 0 0;
+    max-width: 280px;
 }
 
 .product-card__price{
