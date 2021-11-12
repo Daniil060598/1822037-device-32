@@ -37,6 +37,35 @@
           <a class="menu-user__link" href="#">
             Корзина
           </a>
+          <div class="popover popover-cart">
+            <div class="popover-content">
+              <ul class="cart-list">
+                <li class="cart-item">
+                  <a class="cart-item__link" href="#">
+                    <img class="cart-item__img" src="img/header/product-1-small.png" width="41" height="43">
+                    <p class="cart-item__title">Любительская селфи-палка</p>
+                  </a>
+                  <button class="cart-item__button-delete">
+                    <span class="visually-hidden">Удалить товар из корзины</span>
+                  </button>
+                </li>
+                <li class="cart-item">
+                  <a class="cart-item__link" href="#">
+                    <img class="cart-item__img" src="img/header/product-2-small.png" width="41" height="43">
+                    <p class="cart-item__title">Профессиональная селфи-палка</p>
+                  </a>
+                  <button class="cart-item__button-delete">
+                    <span class="visually-hidden">Удалить товар из корзины</span>
+                  </button>
+                </li>
+              </ul>
+              <div class="cart-total">
+                <p class="cart-total__qty"><span>Товаров:</span> 2</p>
+                <p class="cart-total__price"><span>Сумма:</span> 2000 ₽</p>
+              </div>
+            </div>
+            <a class="button-cart" href="#">Открыть корзину</a>
+          </div>
         </li>
       </ul>
     </div>
@@ -84,7 +113,7 @@
   <main class="main-container main-index">
     <section class="slider">
       <ol class="slider__list">
-        <li class="slider__item">
+        <li class="slider__item slider-active">
           <div class="slider-images">
             <img class="slider-img" src="img/slider/slide-1.png" width="560" height="560"
               alt="изображение квадрокоптера">
@@ -107,7 +136,7 @@
             </table>
           </div>
         </li>
-        <!--<li class="slider__item">
+        <li class="slider__item">
           <div class="slider-images">
             <img class="slider-img" src="img/slider/slide-2.png" width="560" height="560"
               alt="изображение фитнес-часов">
@@ -150,7 +179,7 @@
               </tr>
             </table>
           </div>
-        </li>-->
+        </li>
       </ol>
       <div class="slider-controls">
         <button class="slider-button slider-prev" type="button">
@@ -255,7 +284,7 @@
           </li>
         </ul>
         <ul class="services-inner">
-          <li class="services-inner__item">
+          <li class="services-inner__item services-inner-active">
             <h2 class="title services__title">Доставка</h2>
             <p class="text services__text">Мы с удовольствием доставим ваш товар прямо
               к вашему подъезду совершенно бесплатно! Ведь

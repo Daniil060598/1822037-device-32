@@ -26,13 +26,34 @@
         <li class="menu-user__item">
           <a class="menu-user__link" href="#">Корзина</a>
           <div class="popover popover-cart">
-            <button class="popover-close-button button button-light">
-              2
-              <span class="visually-hidden">Закрыть</span>
-            </button>
             <div class="popover-content">
+              <ul class="cart-list">
+                <li class="cart-item">
+                  <a class="cart-item__link" href="#">
+                    <img class="cart-item__img" src="img/header/product-1-small.png" width="41" height="43">
+                    <p class="cart-item__title">Любительская селфи-палка</p>
+                  </a>
+                  <button class="cart-item__button-delete">
+                    <span class="visually-hidden">Удалить товар из корзины</span>
+                  </button>
+                </li>
+                <li class="cart-item">
+                  <a class="cart-item__link" href="#">
+                    <img class="cart-item__img" src="img/header/product-2-small.png" width="41" height="43">
+                    <p class="cart-item__title">Профессиональная селфи-палка</p>
+                  </a>
+                  <button class="cart-item__button-delete">
+                    <span class="visually-hidden">Удалить товар из корзины</span>
+                  </button>
+                </li>
+              </ul>
+              <div class="cart-total">
+                <p class="cart-total__qty"><span>Товаров:</span> 2</p>
+                <p class="cart-total__price"><span>Сумма:</span> 2000 ₽</p>
+              </div>
             </div>
-        </div>
+            <a class="button-cart" href="#">Открыть корзину</a>
+          </div>
         </li>
       </ul>
     </div>
@@ -242,8 +263,11 @@
               </a>
             </li>
             <li class="product-card">
-              <a class="product-card__link" href="#">
+              <div class="product-wrapper">
                 <img class="product-card__image" src="img/catalog/product-3.jpg" width="360" height="380" alt="">
+                <a class="button-link product-card__more" href="">Подробнее</a>
+              </div>
+              <a class="product-card__link" href="#">
                 <div class="product-card__desc">
                   <h2 class="product-card__title">Непотопляемая селфи-палка</h2>
                   <b class="product-card__price">2500 ₽</b>
@@ -251,8 +275,11 @@
               </a>
             </li>
             <li class="product-card">
-              <a class="product-card__link" href="#">
+              <div class="product-wrapper">
                 <img class="product-card__image" src="img/catalog/product-4.jpg" width="360" height="380" alt="">
+                <a class="button-link product-card__more" href="">Подробнее</a>
+              </div>
+              <a class="product-card__link" href="#">
                 <div class="product-card__desc">
                   <h2 class="product-card__title">Селфи-палка «Следуй за мной»</h2>
                   <b class="product-card__price">4900 ₽</b>
