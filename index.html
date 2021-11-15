@@ -42,7 +42,7 @@
               <ul class="cart-list">
                 <li class="cart-item">
                   <a class="cart-item__link" href="#">
-                    <img class="cart-item__img" src="img/header/product-1-small.png" width="41" height="43">
+                    <img class="cart-item__img" src="img/header/product-1-small.png" width="41" height="43" alt="Изображение селфи-палки">
                     <p class="cart-item__title">Любительская селфи-палка</p>
                   </a>
                   <button class="cart-item__button-delete">
@@ -51,7 +51,7 @@
                 </li>
                 <li class="cart-item">
                   <a class="cart-item__link" href="#">
-                    <img class="cart-item__img" src="img/header/product-2-small.png" width="41" height="43">
+                    <img class="cart-item__img" src="img/header/product-2-small.png" width="41" height="43" alt="Изображение селфи-палки">
                     <p class="cart-item__title">Профессиональная селфи-палка</p>
                   </a>
                   <button class="cart-item__button-delete">
@@ -123,7 +123,7 @@
             <p class="text slider-inner__text">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером,
               замаскированным под стандартную камеру.
             </p>
-            <a class="button-link-2 slider-inner__more" href="#">Подробнее</a>
+            <a class="button-link slider-inner__more" href="#">Подробнее</a>
             <table class="slider-inner__specifications">
               <tr>
                 <th>800 м</th>
@@ -206,7 +206,6 @@
           </button>
         </li>
       </ol>
-      </div>
     </section>
 
     <section class="product-categories">
@@ -242,7 +241,7 @@
         <li class="product-categories__item">
           <a class="product-categories__link" href="#">
             <div class="product-categories-bg">
-              <img class="product-categories__icon" src="img/category-icon-4.svg" width="107.3" height="65"
+              <img class="product-categories__icon" src="img/category-icon-4.svg" width="107" height="65"
                 alt="фитнес-браслеты">
             </div>
             <span class="product-categories__name">Фитнес-браслеты</span>
@@ -274,7 +273,7 @@
       <div class="services-container">
         <ul class="services__list">
           <li class="services__item">
-            <a class="button-link services__button" href="">Доставка</a>
+            <a class="button-link services__button services__button_selected" href="">Доставка</a>
           </li>
           <li class="services__item">
             <a class="button-link services__button" href="">Гарантия</a>
@@ -334,7 +333,7 @@
             ТоксБерри
           </li>
         </ul>
-        <a class="button-link-2 about-company__more" href="#">Подробнее о нас</a>
+        <a class="button-link about-company__more" href="#">Подробнее о нас</a>
       </section>
       <section class="contacts">
         <h2 class="title contacts__title">Контакты</h2>
@@ -350,7 +349,7 @@
           <li class="contacts__schedule-item">пн—пт: с 10:00 до 22:00</li>
           <li class="contacts__schedule-item">сб—вс: с 10:00 до 19:00</li>
         </ul>
-        <a class="button-link-2 contacts__button-feedback" href="#">Напишите нам</a>
+        <a class="button-link contacts__button-feedback" href="#">Напишите нам</a>
       </section>
     </div>
     <div class="newsletter-container">
@@ -452,34 +451,44 @@
     </div>
   </footer>
 
-  <div class="modal-container">
+  <div class="modal-container modal-container-close">
     <div class="modal modal-order">
       <section class="modal-content">
-        <button class="modal-close-button">
+        <button class="modal__close-button">
           <span class="visually-hidden">Закрыть</span>
         </button>
-        <h2 class="title modal-title">Доставка под заказ</h2>
+        <h2 class="title modal__title">Доставка под заказ</h2>
         <form class="deliviry-form" action="https://echo.htmlacademy.ru/" method="post">
           <div class="form-wrapper">
             <p class="field-group">
               <label class="form-label" for="name">Ваше имя:</label>
-              <input class="name-form-field field" type="text" id="name" name="name" placeholder="Имя Фамилия">
+              <input class="field deliviry-form__name" type="text" id="name" name="name" placeholder="Имя Фамилия">
+              <span class="alert deliviry-form__alert alert_error">Пожалуйста, представьтесь</span>
             </p>
             <p class="field-group">
               <label class="form-label" for="email">Ваш e-mail:</label>
-              <input class="email-form-field field" type="email" id="email" name="email" placeholder="Введите e-mail">
+              <input class="field deliviry-form__email" type="email" id="email" name="email" placeholder="Введите e-mail">
+              <span class="alert deliviry-form__alert">Забавный у вас адрес</span>
             </p>
             <p class="field-group">
               <label class="form-label" for="message">Что нужно привезти:</label>
-              <input class="text-form-field field" type="text" id="message" name="message"
+              <input class="deliviry-form__text field" type="text" id="message" name="message"
                 placeholder="В свободной форме">
             </p>
             <p class="field-group">
               <label class="form-label" for="number">Количество:</label>
-              <input class="number-form-field field" type="text" id="number" name="number" placeholder="1">
+              <span class="tooltip"><span class="tooltip__text">Постараемся найти, сколько нужно. Привезём сколько получится по требованиям 
+                к провозу багажа.</span></span>
+                <input class="field deliviry-form__number" type="text" id="number" name="number" placeholder="1">
+              <button class="button-number button-decrease-number" type="button">
+                <span class="visually-hidden">Уменьшить на еденицу</span>
+              </button>
+              <button class="button-number button-increase-number" type="button">
+                <span class="visually-hidden">Увеличить на еденицу</span>
+              </button>
             </p>
           </div>
-          <button class="button-link-2 button-form" type="submit">Отправить</button>
+          <button class="button-link deliviry-form__button" type="submit">Отправить</button>
         </form>
       </section>
     </div>

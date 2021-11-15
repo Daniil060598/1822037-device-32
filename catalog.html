@@ -14,17 +14,17 @@
       <img class="logo" src="img/header/logo.svg" width="145" height="36" alt="Логотип Интернет-магазин «Девайс»">
       <form class="search-form">
         <input type="text" class="input-search" id="mySearch" name="q" placeholder="Поиск по сайту">
-        <button class="button-search">Search</button>
+        <button class="button-search">Найти</button>
       </form>
       <ul class="menu-user__list">
         <li class="menu-user__item">
-          <a class="menu-user__link" href="#">Войти</a>
+          <a class="menu-user__link" href="#">Коля Петухов</a>
         </li>
         <li class="menu-user__item">
           <a class="menu-user__link" href="#">Сравнить</a>
         </li>
         <li class="menu-user__item">
-          <a class="menu-user__link" href="#">Корзина</a>
+          <a class="menu-user__link" href="#" data-count="2">Корзина</a>
           <div class="popover popover-cart">
             <div class="popover-content">
               <ul class="cart-list">
@@ -161,11 +161,11 @@
 
                 <div class="range-wrapper-inputs">
                   <label class="catalog-filter__label">
-                    от <input class="catalog-filter__input" type="number" value="50" name="min-price">
+                    от <input class="catalog-filter__input" type="number" value="0" name="min-price">
                   </label>
 
                   <label class="catalog-filter__label">
-                    до <input class="catalog-filter__input" type="number" value="1500" name="max-price"
+                    до <input class="catalog-filter__input" type="number" value="5000" name="max-price"
                       style="width: 37px">
                   </label>
                 </div>
@@ -233,7 +233,7 @@
               </ul>
             </fieldset>
 
-            <button class="button-link-2 button-filter" type="submit">Показать</button>
+            <button class="button-link button-filter" type="submit">Показать</button>
           </form>
         </div>
         <div class="catalog-right-column">
@@ -264,7 +264,7 @@
             </li>
             <li class="product-card">
               <div class="product-wrapper">
-                <img class="product-card__image" src="img/catalog/product-3.jpg" width="360" height="380" alt="">
+                <img class="product-card__image" src="img/catalog/product-3.jpg" width="360" height="380" alt="Изображение селфи-палки">
                 <a class="button-link product-card__more" href="">Подробнее</a>
               </div>
               <a class="product-card__link" href="#">
@@ -276,8 +276,9 @@
             </li>
             <li class="product-card">
               <div class="product-wrapper">
-                <img class="product-card__image" src="img/catalog/product-4.jpg" width="360" height="380" alt="">
+                <img class="product-card__image" src="img/catalog/product-4.jpg" width="360" height="380" alt="Изображение селфи-палки">
                 <a class="button-link product-card__more" href="">Подробнее</a>
+                <span class="product-card__mark">new</span>
               </div>
               <a class="product-card__link" href="#">
                 <div class="product-card__desc">
